@@ -1,5 +1,6 @@
 {
-  "name": "bustling-binary",
+  "name": "brandemic-landing-page",
+  "private": true,
   "type": "module",
   "version": "0.0.1",
   "engines": {

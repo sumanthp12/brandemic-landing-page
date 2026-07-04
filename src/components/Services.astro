@@ -1,0 +1,114 @@
+---
+import blitz from "../assets/images/work-blitz.png";
+import packaging from "../assets/images/work-packaging.png";
+import switchkart from "../assets/images/work-switchkart.png";
+import restaurant from "../assets/images/work-restaurant.png";
+
+import "../styles/services.css";
+
+const services = [
+  {
+    number: "01.",
+    title: "BRANDING",
+    description:
+      "We transform ideas into extraordinary brand experiences. From crafting strategies to delivering seamless designs, here's how we can help.",
+    image: restaurant,
+  },
+  {
+    number: "02.",
+    title: "PACKAGING",
+    description:
+      "We transform ideas into extraordinary brand experiences. From crafting strategies to delivering seamless designs, here's how we can help.",
+    image: packaging,
+  },
+  {
+    number: "03.",
+    title: "UI/UX",
+    description:
+      "We transform ideas into extraordinary brand experiences. From crafting strategies to delivering seamless designs, here's how we can help.",
+    image: switchkart,
+  },
+  {
+    number: "04.",
+    title: "WEB DEVELOPMENT",
+    description:
+      "We transform ideas into extraordinary brand experiences. From crafting strategies to delivering seamless designs, here's how we can help.",
+    image: blitz,
+  },
+];
+---
+
+
+<section class="services-section">
+
+    <div class="container">
+
+        <div class="services-top">
+
+            <div>
+
+                <h2>
+                    Back To The Simple,<br>
+                    <span>Intuitive, And Inspiring.</span>
+                </h2>
+
+                <p>
+                    We transform ideas into extraordinary brand experiences.
+                    From crafting strategies to delivering seamless designs,
+                    here's how we can help.
+                </p>
+
+            </div>
+
+            <a href="#" class="services-btn">
+
+                Let's Collaborate →
+
+            </a>
+
+        </div>
+
+        <div class="services-list">
+
+            {services.map(service => (
+
+                <div class="service-card">
+
+                    <div class="service-inner">
+
+                        <div class="service-header">
+
+                            <span class="service-number">
+                                {service.number}
+                            </span>
+
+                            <h3>{service.title}</h3>
+
+                        </div>
+
+                        <div class="service-content">
+
+                            <div class="service-text">
+
+                                <div class="service-line"></div>
+
+                                <p>{service.description}</p>
+
+                            </div>
+
+                            <img
+                                src={service.image.src}
+                                alt={service.title}
+                                class="service-image"
+                            />
+
+                        </div>
+
+                    </div>
+
+                </div>
+            ))}
+        </div>
+    </div>
+
+</section>

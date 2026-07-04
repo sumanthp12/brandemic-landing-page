@@ -1,0 +1,54 @@
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    padding:24px 20px;
+    background: radial-gradient( circle at center, rgba(53,229,155,.10),rgba(98,63,255,.10) 40%, #111111 100%);
+    backdrop-filter: blur(18px);
+    height: 80px;
+    border-bottom:1px solid rgba(255,255,255,.06);
+}
+
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo img{
+    height:38px;
+}
+
+.nav-links{
+    display:flex;
+    gap:36px;
+}
+
+.nav-links a{
+    color:white;
+    font-size:15px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--green);
+}
+
+.nav-actions{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.contact-btn{
+    padding:10px 20px;
+    border:1px solid white;
+    border-radius:50px;
+}
+
+.menu-btn{
+    display:flex;
+    align-items:center;
+}

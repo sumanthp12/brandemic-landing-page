@@ -1,0 +1,72 @@
+---
+import showcase1 from "../assets/images/showcase-1.png";
+import showcase2 from "../assets/images/showcase-2.png";
+import showcase3 from "../assets/images/showcase-3.png";
+import showcase4 from "../assets/images/showcase-4.png";
+import backgroundBrandemic from "../assets/icons/background-Brandemic.svg";
+
+import "../styles/partner-section.css";
+---
+
+<section class="partner-section">
+
+    <img
+        src={backgroundBrandemic.src}
+        alt=""
+        class="partner-bg partner-bg-left"
+    />
+
+    <img
+        src={backgroundBrandemic.src}
+        alt=""
+        class="partner-bg partner-bg-right"
+    />
+
+    <div class="container">
+
+        <div class="partner-heading">
+
+            <h2>
+                We Are Your Design Partners In Turning
+            </h2>
+
+            <span>Ideas Into Magic</span>
+
+        </div>
+
+        <div class="partner-showcase">
+
+            <div class="card-stack">
+
+                <div class="showcase-card active">
+                    <img src={showcase1.src} alt="">
+                </div>
+
+                <div class="showcase-card">
+                    <img src={showcase2.src} alt="">
+                </div>
+
+                <div class="showcase-card">
+                    <img src={showcase3.src} alt="">
+                </div>
+
+                <div class="showcase-card">
+                    <img src={showcase4.src} alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+        <a class="partner-btn">
+            Get To Know Us   →
+        </a>
+
+    </div>
+
+</section>
+
+
+<script type="module">
+  import "../scripts/partner-section.js";
+</script>

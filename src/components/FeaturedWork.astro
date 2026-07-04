@@ -1,0 +1,88 @@
+---
+import restaurant from "../assets/images/work-restaurant.png";
+import packaging from "../assets/images/work-packaging.png";
+import switchkart from "../assets/images/work-switchkart.png";
+import blitz from "../assets/images/work-blitz.png";
+
+const works = [
+  {
+    title: "Restaurant",
+    category: "Packaging",
+    image: restaurant,
+    large: true,
+  },
+  {
+    title: "Packaging",
+    category: "Branding",
+    image: packaging,
+  },
+  {
+    title: "SwitchKart",
+    category: "Branding",
+    image: switchkart,
+  },
+  {
+    title: "Blitz",
+    category: "Packaging",
+    image: blitz,
+  },
+];
+---
+
+<section class="featured-work">
+
+    <div class="container">
+
+        <div class="featured-header">
+
+            <h2>FEATURED WORK</h2>
+
+            <div class="featured-controls">
+                    <div class="filters">
+                        <button class="active">All</button>
+                        <button>Packaging</button>
+                        <button>Branding</button>
+                        <button>Web Development</button>
+                        <button>UI/UX</button>
+                    </div>
+
+                    <div class="slider-controls">
+
+                        <button class="slider-btn slider-prev">←</button>
+                        <button class="slider-btn slider-next">→</button>
+
+                    </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="featured-slider">
+
+        <div class="featured-track">
+
+            {works.map((item) => (
+
+                <article class={item.large ? "work-card" : "work-card"}>
+
+                    <img
+                        src={item.image.src}
+                        alt={item.title}
+                    />
+
+                </article>
+
+            ))}
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<script type="module">
+  import "../scripts/featured-work.js";
+</script>
