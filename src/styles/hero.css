@@ -31,10 +31,6 @@
     color:white;
 }
 
-.hero-heading span{
-    color:var(--green);
-}
-
 .hero-image-wrapper{
     width:100%;
     overflow:hidden;
@@ -115,4 +111,17 @@ width:100%;
 font-size:24px;
 }
 
+}
+
+.hero-title{
+    line-height:1.05;
+}
+
+.hero-word{
+    display:inline-block;
+    margin-right: 20px;
+}
+
+.green{
+    color:var(--green);
 }

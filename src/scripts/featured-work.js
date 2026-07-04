@@ -9,9 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const cards = [...track.children];
 
     let activeIndex = 0;
-
     cards[0].classList.add("active");
-
     updateButtons();
 
     function moveSlider(){
@@ -21,45 +19,28 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         cards[activeIndex].classList.add("active");
-
         requestAnimationFrame(()=>{
-
         });
-
         updateButtons();
     }
 
     function updateButtons(){
-
         prevBtn.disabled = activeIndex === 0;
-
         nextBtn.disabled =
             activeIndex === cards.length - 1;
-
     }
 
     nextBtn.addEventListener("click",()=>{
-
         if(activeIndex < cards.length-1){
-
             activeIndex++;
-
             moveSlider();
-
         }
-
     });
 
     prevBtn.addEventListener("click",()=>{
-
         if(activeIndex > 0){
-
             activeIndex--;
-
             moveSlider();
-
         }
-
     });
-
 });

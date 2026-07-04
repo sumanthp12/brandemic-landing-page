@@ -30,13 +30,9 @@ const works = [
 ---
 
 <section class="featured-work">
-
     <div class="container">
-
         <div class="featured-header">
-
             <h2>FEATURED WORK</h2>
-
             <div class="featured-controls">
                     <div class="filters">
                         <button class="active">All</button>
@@ -45,41 +41,25 @@ const works = [
                         <button>Web Development</button>
                         <button>UI/UX</button>
                     </div>
-
                     <div class="slider-controls">
-
                         <button class="slider-btn slider-prev">←</button>
                         <button class="slider-btn slider-next">→</button>
-
                     </div>
-
             </div>
-
         </div>
-
     </div>
-
     <div class="featured-slider">
-
         <div class="featured-track">
-
             {works.map((item) => (
-
                 <article class={item.large ? "work-card" : "work-card"}>
-
                     <img
                         src={item.image.src}
                         alt={item.title}
                     />
-
                 </article>
-
             ))}
-
         </div>
-
     </div>
-
 </section>
 
 

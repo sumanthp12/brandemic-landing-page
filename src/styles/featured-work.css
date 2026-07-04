@@ -105,12 +105,9 @@
 .work-card{
     width:280px;
     height:560px;
-
     flex-shrink:0;
-
     border-radius:20px;
     overflow:hidden;
-
     transition:
         width .75s cubic-bezier(.22,1,.36,1),
         transform .75s cubic-bezier(.22,1,.36,1);
