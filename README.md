@@ -1,6 +1,6 @@
 # Brandemic Landing Page
 
-A modern, responsive landing page recreated from the provided Figma design using Astro. The project focuses on clean component architecture, smooth animations, and pixel-perfect UI implementation.
+A modern landing page recreated from the provided Figma design using Astro. The project focuses on clean component architecture, smooth animations, and pixel-perfect UI implementation.
 
 ## Tech Stack
 
@@ -12,7 +12,6 @@ A modern, responsive landing page recreated from the provided Figma design using
 
 ## Features
 
-- Responsive design
 - Reusable Astro components
 - GSAP-powered scroll animations
 - CSS hover interactions
@@ -34,4 +33,4 @@ npm run preview
 
 ---
 
-Designed and developed by **Sumanth P**.
+Developed by **Sumanth P**.
