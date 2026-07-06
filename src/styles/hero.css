@@ -9,14 +9,8 @@
 }
 
 .hero-top{
-    background:
-    radial-gradient(
-        circle at 55% 0%,
-        rgba(83,59,170,.35),
-        transparent 55%
-    ),
-    #111;
-    padding-top:110px;
+    background: linear-gradient(180deg,#1b1630 0%,#16131f 50%,#111111 100%);
+    padding-top:130px;
 }
 
 .hero-heading{
@@ -27,12 +21,14 @@
 .hero-heading h1{
     font-size:96px;
     font-weight:400;
-    line-height:1.05;
-    color:white;
+    color: var(--white);
+    line-height:1.2;
+    letter-spacing:2px;
 }
 
 .hero-image-wrapper{
     width:100%;
+    height: 658px;
     overflow:hidden;
 }
 
@@ -45,7 +41,7 @@
 
 .hero-bottom{
     background:#111;
-    padding:30px 0;
+    padding:50px 0;
 }
 
 .hero-bottom-content{
@@ -57,21 +53,34 @@
 
 .hero-bottom p{
     width:700px;
-    color:#d7d7d7;
+    color: var(--white);
     font-size:24px;
     line-height:30px;
-    font-weight:300;
+    font-weight:100;
     letter-spacing: 1px;
 }
 
 .discover-btn{
     display:flex;
     align-items:center;
-    gap:12px;
     color:var(--green);
     text-decoration:none;
-    font-size:18.55px;
-    line-height:115.91px;
+    font-size:18px;
+    font-weight:100;
+}
+
+.discover-text{
+    margin-left: -22px;
+    z-index: 2;
+}
+
+.discover-circle{
+    width:48px;
+    height:48px;
+    border:1px solid var(--green);
+    border-radius:50%;
+    flex-shrink:0;
+    transition:.35s;
 }
 
 .discover-btn img{
