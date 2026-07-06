@@ -3,6 +3,7 @@ import blitz from "../assets/images/work-blitz.png";
 import packaging from "../assets/images/work-packaging.png";
 import switchkart from "../assets/images/work-switchkart.png";
 import restaurant from "../assets/images/work-restaurant.png";
+import discoverArrow from "../assets/icons/discover-arrow.svg";
 
 import "../styles/services.css";
 
@@ -54,7 +55,9 @@ const services = [
                 </p>
             </div>
             <a href="#" class="services-btn">
-                Let's Collaborate →
+                <span class="services-circle"></span>
+                <span class="services-text">Let's Collaborate</span>
+                <img src={discoverArrow.src} alt="" />
             </a>
         </div>
         <div class="services-list">

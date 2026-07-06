@@ -26,10 +26,11 @@
 }
 
 .services-top p{
-    margin-top:28px;
+    margin:28px 0 90px 0;
     color:#B9B9B9;
     line-height:1.6;
     font-size:18px;
+    font-weight: 100;
 }
 
 .service-card{
@@ -60,6 +61,7 @@
     font-size: 18px;
     margin-bottom: 18px;
     opacity: .8;
+    font-weight: 100;
 }
 
 .service-header h3{
@@ -73,6 +75,14 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
+}
+
+.service-content p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    color: var(--white);
+    font-weight: 100;
 }
 
 .service-text{
@@ -94,7 +104,7 @@
 .service-image{
     position: absolute;
     right: 90px;
-    top: 50%;
+    top: 30%;
     transform: translateY(-50%) rotate(10deg);
     width: 230px;
     height: 230px;
@@ -115,17 +125,19 @@
 
 .service-card.active .service-image{
     opacity:1;
-    transform:
-        rotate(10deg)
-        translateY(-10px);
+    transform: translateY(calc(-50% - 22px)) rotate(8deg);
 }
 
 .service-card.active{
     z-index:20;
 }
 
-.service-header:hover h3 {
-    color: #38C67F;
+.service-card:hover .service-header h3{
+    color:#38C67F;
+}
+
+.service-card:hover .service-number{
+    color:#38C67F;
 }
 
 .service-card:hover{
@@ -157,7 +169,28 @@
 .services-btn{
     margin-top: 90px;
     flex-shrink:0;
-    font-size: 18px;
     line-height: 115.91px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:18px;
+    font-size: 18px;
     color: #38C67F;
+    text-decoration:none;
+    font-weight: 300;
+}
+
+.services-circle{
+    width:48px;
+    height:48px;
+    border:1px solid var(--green);
+    border-radius:50%;
+    flex-shrink:0;
+    transition:.35s;
+}
+
+.services-text{
+    margin-left: -47px;
+    z-index: 2;
+    letter-spacing: 1px;
 }
