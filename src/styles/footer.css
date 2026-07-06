@@ -25,7 +25,7 @@
 }
 
 .footer-logo {
-    width: 210px;
+    width: 240px;
     margin-bottom: 36px;
 }
 
@@ -121,7 +121,7 @@
 
 .footer-title{
     font-size:135px;
-    letter-spacing: 2px;
+    letter-spacing: 2.7px;
     line-height:.9;
     font-weight:400;
     color:#5E33FF;
@@ -170,7 +170,6 @@
     display:flex;
     align-items:center;
     justify-content:center;
-
     transition:0.3s ease;
 }
 
