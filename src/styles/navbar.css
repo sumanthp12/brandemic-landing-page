@@ -1,14 +1,16 @@
 .navbar{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    z-index:1000;
-    padding:24px 20px;
-    background: radial-gradient( circle at center, rgba(53,229,155,.10),rgba(98,63,255,.10) 40%, #111111 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 88px;
+    z-index: 1000;
+    padding: 24px 20px;
+    background: linear-gradient(to bottom,rgba(19,19,19,.80), rgba(17,17,17,.80)),
+                radial-gradient(ellipse at center, rgba(92,72,170,.08), transparent 70%);
     backdrop-filter: blur(18px);
-    height: 80px;
-    border-bottom:1px solid rgba(255,255,255,.06);
+    -webkit-backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(255,255,255,.05);
 }
 
 .nav-container{
@@ -18,7 +20,7 @@
 }
 
 .logo img{
-    height:38px;
+    height:40px;
 }
 
 .nav-links{
@@ -43,7 +45,7 @@
 }
 
 .contact-btn{
-    padding:10px 20px;
+    padding:10px 10px;
     border:1px solid white;
     border-radius:50px;
 }
