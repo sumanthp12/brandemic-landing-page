@@ -11,7 +11,7 @@
 
 .partner-heading{
     max-width: 1050px;
-    margin: 0 auto 40px;
+    margin: 0 auto 30px;
     text-align: center;
 }
 
@@ -45,25 +45,7 @@
     transition:.6s ease;
 }
 
-.showcase-card:nth-child(1){
-    transform:rotate(2deg);
-    z-index:4;
-}
 
-.showcase-card:nth-child(2){
-    transform:rotate(-1.5deg) translateY(18px);
-    z-index:3;
-}
-
-.showcase-card:nth-child(3){
-    transform:rotate(1deg) translateY(36px);
-    z-index:2;
-}
-
-.showcase-card:nth-child(4){
-    transform:rotate(-2deg) translateY(54px);
-    z-index:1;
-}
 
 .showcase-card img{
     width:100%;
@@ -80,16 +62,15 @@
 }
 
 .partner-bg-left{
-    width:500px;
-    left:-50px;
+    width:530px;
+    left:0px;
     top:0px;
 }
 
 .partner-bg-right{
-    width:500px;
-    right:-50px;
+    width:530px;
+    right:0px;
     bottom:0px;
-    transform:rotate(180deg);
 }
 
 .partner-btn{

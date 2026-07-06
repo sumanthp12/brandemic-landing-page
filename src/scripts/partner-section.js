@@ -11,15 +11,24 @@ const initPartner = () => {
 
     const cards = gsap.utils.toArray(".showcase-card");
 
-    cards.forEach((card, index) => {
+    const stack = [
+            { rotation: 0, y: 0 },
+            { rotation: -3, y: 0},
+            { rotation: -3, y: 0 },
+            { rotation: -3, y: 0 }
+        ];
 
-        gsap.set(card, {
-            rotation: index * 2 - 3,
-            y: index * 20,
-            zIndex: cards.length - index
+        cards.forEach((card, index) => {
+
+            gsap.set(card, {
+                rotation: stack[index].rotation,
+                y: stack[index].y,
+                zIndex: cards.length - index,
+                x: 0,
+                opacity: 1
+            });
+
         });
-
-    });
 
     const tl = gsap.timeline({
 
@@ -40,13 +49,21 @@ const initPartner = () => {
 
     const direction = index % 2 === 0 ? -1 : 1;
 
-    tl.to(card, {
-        x: direction * 1200,
-        rotation: direction * 15,
-        opacity: 0,
-        duration: 1,
-        ease: "power3.inOut"
-    });
+    const next = cards[index + 1];
+
+        tl.to(card,{
+            x: direction * 1500,
+            rotation:0,
+            duration:0.5,
+            ease:"power2.inOut"
+        });
+
+        tl.to(next,{
+            rotation:0,
+            y:0,
+            duration:0.5,
+            ease:"power2.out"
+        },"<");
 });
 
 
