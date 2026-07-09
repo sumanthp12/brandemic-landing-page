@@ -353,6 +353,7 @@
 
 .service-card:hover .service-image{
     transform:none;
+    opacity: 0;
 }
 
 }
@@ -377,10 +378,6 @@
 
 .service-card{
     height:110px;
-}
-
-.service-card:hover{
-    height:320px;
 }
 
 .service-image{
