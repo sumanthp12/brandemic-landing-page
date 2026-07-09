@@ -66,9 +66,6 @@ const initPartner = () => {
         },"<");
 });
 
-
-
-
 };
 
 if (document.readyState === "loading") {

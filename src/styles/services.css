@@ -1,4 +1,5 @@
 .services-section{
+    margin-top:-70px;
     padding: 0;
 }
 
@@ -193,4 +194,211 @@
     margin-left: -47px;
     z-index: 2;
     letter-spacing: 1px;
+}
+
+@media (max-width:1024px){
+
+.services-top{
+    gap:60px;
+}
+
+.services-top > div{
+    flex:1;
+}
+
+.services-top h2{
+    font-size:40px;
+}
+
+.services-btn{
+    margin-top:40px;
+    font-size:16px;
+}
+
+.service-header h3{
+    font-size:38px;
+}
+
+.service-image{
+    width:180px;
+    height:180px;
+    right:40px;
+}
+
+.service-text{
+    width:65%;
+}
+
+}
+
+@media (max-width:768px){
+
+.services-section{
+    margin-top:-150px;
+}
+
+.services-top{
+    display:flex;
+    flex-direction:column;
+    gap:0px;
+}
+
+.services-top > div{
+    flex:1;
+}
+
+.services-top h2{
+    font-size:32px;
+}
+
+.services-top p{
+    margin:20px 0 0;
+    font-size:16px;
+}
+
+.services-btn{
+    margin-top:0;
+    justify-content:flex-start;
+    font-size:16px;
+}
+
+.service-card{
+    height:120px;
+    transition:.45s ease;
+}
+
+.service-card.active{
+    height:400px;
+    background:#2d107a;
+}
+
+.service-inner{
+    padding:24px;
+}
+
+.service-header h3{
+    font-size:30px;
+}
+
+.service-content{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:24px;
+}
+
+.service-text{
+    width:100%;
+}
+
+.service-image{
+    position:relative;
+    top:auto;
+    right:auto;
+    transform:none;
+    opacity:0;
+    width:100%;
+    max-width:280px;
+    height:180px;
+    margin:auto;
+    pointer-events:none;
+}
+
+.service-card.active .service-image{
+    opacity:1;
+    transform:rotate(5deg);
+}
+
+.service-card.active .service-text{
+    opacity:1;
+    max-height:220px;
+}
+
+.service-card.active .service-line{
+    width:100%;
+}
+
+.service-card.active .service-header h3{
+    color:#38C67F;
+}
+
+.service-card.active .service-number{
+    color:#38C67F;
+}
+
+.service-card:hover{
+    height:120px;
+    background:#5527D8;
+}
+
+.service-card:hover .service-text{
+    opacity:0;
+    max-height:0;
+}
+
+.service-card:hover .service-line{
+    width:0;
+}
+
+.service-card:hover .service-header{
+    transform:none;
+}
+
+.service-card:hover .service-header h3{
+    color:#fff;
+}
+
+.service-card:hover .service-number{
+    color:#fff;
+}
+
+.service-card:hover .service-image{
+    transform:none;
+}
+
+}
+
+@media (max-width:480px){
+
+.services-top h2{
+    font-size:26px;
+}
+
+.service-header h3{
+    font-size:24px;
+}
+
+.service-number{
+    font-size:16px;
+}
+
+.service-content p{
+    font-size:15px;
+}
+
+.service-card{
+    height:110px;
+}
+
+.service-card:hover{
+    height:320px;
+}
+
+.service-image{
+    max-width:220px;
+    height:150px;
+}
+
+.services-circle{
+    width:40px;
+    height:40px;
+}
+
+.services-text{
+    margin-left:-34px;
+}
+
+.services-btn{
+    font-size:15px;
+}
+
 }

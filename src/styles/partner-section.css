@@ -96,3 +96,35 @@
     margin-left: -43px;
     z-index: 2;
 }
+
+@media (max-width:768px){
+
+.partner-heading h2{
+    font-size:32px;
+    line-height:1.2;
+}
+
+.partner-heading span{
+    font-size:32px;
+    margin-top: 0;
+}
+
+.card-stack{
+    width:92%;
+    max-width:360px;
+    height:460px;
+}
+
+.partner-bg-left{
+    width:220px;
+    top:0px;
+    left:-30px;
+}
+
+.partner-bg-right{
+    width:220px;
+    right:-30px;
+    bottom:120px;
+}
+
+}

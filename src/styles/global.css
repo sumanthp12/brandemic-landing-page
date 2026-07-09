@@ -11,10 +11,11 @@ html{
 }
 
 body{
-    font-family: 'Manrope', sans-serif;
+    font-family:'Manrope',sans-serif;
     background:var(--background);
     color:var(--white);
     overflow-x:hidden;
+    min-width:320px;
 }
 
 img{
@@ -36,13 +37,6 @@ button{
 
 ul{
     list-style:none;
-}
-
-.container {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 48px;
 }
 
 @media (max-width: 1024px) {

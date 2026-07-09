@@ -1,46 +1,64 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     const track = document.querySelector(".featured-track");
+    const cards = [...document.querySelectorAll(".work-card")];
+
     const prevBtn = document.querySelector(".slider-prev");
     const nextBtn = document.querySelector(".slider-next");
 
-    if (!track) return;
-
-    const cards = [...track.children];
-
+    if(!track) return;
     let activeIndex = 0;
     cards[0].classList.add("active");
-    updateButtons();
+    update();
 
-    function moveSlider(){
-
+    function update(){
         cards.forEach(card=>{
             card.classList.remove("active");
         });
 
         cards[activeIndex].classList.add("active");
         requestAnimationFrame(()=>{
-        });
-        updateButtons();
-    }
+            const activeCard = cards[activeIndex];
+            const slider = document.querySelector(".featured-slider");
+            const sliderWidth = slider.clientWidth;
+            const cardCenter = activeCard.offsetLeft + activeCard.offsetWidth/2;
 
-    function updateButtons(){
-        prevBtn.disabled = activeIndex === 0;
+            let translate = cardCenter - sliderWidth/2;
+
+            const maxTranslate = track.scrollWidth - sliderWidth;
+            translate = Math.max(0,translate);
+            translate = Math.min(maxTranslate,translate);
+            track.style.transform = `translateX(-${translate}px)`;
+        });
+
+        prevBtn.disabled =
+            activeIndex===0;
+
         nextBtn.disabled =
-            activeIndex === cards.length - 1;
+            activeIndex===cards.length-1;
+
     }
 
     nextBtn.addEventListener("click",()=>{
-        if(activeIndex < cards.length-1){
+        if(activeIndex<cards.length-1){
             activeIndex++;
-            moveSlider();
+            update();
         }
     });
 
     prevBtn.addEventListener("click",()=>{
-        if(activeIndex > 0){
+        if(activeIndex>0){
             activeIndex--;
-            moveSlider();
+            update();
         }
     });
+
+    cards.forEach((card,index)=>{
+    card.addEventListener("click",()=>{
+        activeIndex=index;
+        update();
+    });
+});
+
+window.addEventListener("resize",update);
 });
